@@ -1,3 +1,105 @@
-body {
+@charset "UTF-8";
 
+@import "fonts";
+@import "variables";
+
+body {
+	font-family: Poppins, sans-serif;
+	margin: unset;
+}
+
+.header {
+	background: $color-background;
+	padding-block: 18px;
+	
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+		max-width: $container-width;
+		margin-inline: auto;
+		padding-inline: 40px;
+		
+		@media #{$normal} {
+			padding-inline: 60px;
+		}
+	}
+	
+	.nav {
+		&__list {
+			list-style: none;
+			display: flex;
+			margin: 0;
+			padding: 0;
+		}
+		
+		&__item {
+			display: flex;
+		}
+		
+		&__link {
+			font-weight: $font-weight-semi-bold;
+			padding: 15px 25px;
+			text-decoration: none;
+			color: $color-text-inverse;
+			text-transform: uppercase;
+			transition: color .4s ease;
+			
+			&:hover,
+			:focus {
+				color: $color-accent;
+			}
+		}
+	}
+	
+	.actions {
+		&__wrap {
+			display: flex;
+			align-items: center;
+			border: 1px solid $color-border-inverse;
+			height: 38px;
+		}
+		
+		&__item {
+			text-indent: -100px;
+			width: 38px;
+			height: 38px;
+			overflow: hidden;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 20px;
+			position: relative;
+			
+			&::after {
+				background-color: #fff;
+				-webkit-clip-path: polygon(100% 100%, 0 100%, 90% 90%, 100% 0);
+				clip-path: polygon(100% 100%, 0 100%, 90% 90%, 100% 0);
+				content: "";
+				inset: 0;
+				position: absolute;
+				transition: background-color .4s ease;
+			}
+			
+			&:hover {
+				&::after {
+					background-color: $color-accent;
+				}
+			}
+			
+			&--search {
+				background-image: url('../images/design/search.svg');
+			}
+			
+			&--user {
+				background-image: url('../images/design/user.svg');
+			}
+			
+			&--cart {
+				background-image: url('../images/design/cart.svg');
+			}
+		}
+	}
+}
+
+h1.title {
+	font-size: 0;
 }

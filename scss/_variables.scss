@@ -1,0 +1,30 @@
+// Sizes
+//$container-width: 1790px;
+$container-width: 1290px;
+
+// Breakpoints
+$breakpoint-normal: 992px;
+$breakpoint-laptop: 992px;
+
+$normal: '(min-width: #{$breakpoint_normal})';
+$laptop: '(min-width: #{$breakpoint-laptop})';
+
+// Fonts
+$font-weight-normal: 400;
+$font-weight-semi-bold: 700;
+$font-weight-bold: 800;
+$font-weight-black: 900;
+
+// Colors
+$color-dark: #1c1c1c; // I have normalized similar gray color values
+$color-red: #dc232b;
+
+$color-background: $color-dark;
+
+$color-text: $color-dark;
+$color-text-inverse: white;
+
+$color-accent: $color-red;
+
+$color-border: $color-dark;
+$color-border-inverse: white;
