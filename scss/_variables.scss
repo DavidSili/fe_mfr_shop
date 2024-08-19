@@ -1,11 +1,15 @@
 // Sizes
-//$container-width: 1790px;
-$container-width: 1290px;
+$container-width: 1790px;
+//$container-width: 1290px;
 
 // Breakpoints
+$breakpoint-mobile-L: 600px;
+$breakpoint-tablet: 770px;
 $breakpoint-normal: 992px;
-$breakpoint-laptop: 992px;
+$breakpoint-laptop: 1200px;
 
+$mobile-L: '(min-width: #{$breakpoint-mobile-L})';
+$tablet: '(min-width: #{$breakpoint-tablet})';
 $normal: '(min-width: #{$breakpoint_normal})';
 $laptop: '(min-width: #{$breakpoint-laptop})';
 
@@ -16,15 +20,22 @@ $font-weight-bold: 800;
 $font-weight-black: 900;
 
 // Colors
-$color-dark: #1c1c1c; // I have normalized similar gray color values
+// I have normalized some of the similar color values
+$color-neutral-1: #202020;
+$color-neutral-2: #42484d;
+$color-neutral-5: #d1d1d1;
+$color-neutral-6: #ececec;
+$color-gray: $color-neutral-1;
 $color-red: #dc232b;
+$color-lime: #d4e621;
+$color-blue: #115291;
 
-$color-background: $color-dark;
+$color-background: $color-neutral-1;
 
-$color-text: $color-dark;
+$color-text: $color-neutral-1;
 $color-text-inverse: white;
 
 $color-accent: $color-red;
 
-$color-border: $color-dark;
+$color-border: $color-neutral-1;
 $color-border-inverse: white;

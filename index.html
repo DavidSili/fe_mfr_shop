@@ -32,10 +32,567 @@
 		</div>
 	</div>
 </header>
+<div class="header-mobile">
+	<div class="top-bar">
+		<a class="logo" href="#">
+			<img class="logo-img" width="58" height="28" loading="eager"
+			     src="https://tau.fra1.digitaloceanspaces.com/mfrshirts/966/Asset-1%402x.png" alt="logo">
+		</a>
+		<div class="mob-header__links">
+			<a href="#" class="mob-header__link mob-header__link--user" aria-label="user">User</a>
+			<a href="#" class="mob-header__link mob-header__link--cart" aria-label="cart">Cart</a>
+			<a href="#" class="mob-header__link mob-header__link--menu" aria-label="menu">Menu<span></span></a>
+		</div>
+	</div>
+	<div class="mob-sidebar">
+		<div class="mob-sidebar__overlay" onclick="closeSidebar()"></div>
+		<div class="mob-sidebar__nav">
+			<form method="GET" action="#" class="mob-sidebar__search">
+				<button type="submit" aria-label="submit"> </button>
+				<input type="text" name="s" required="" placeholder="What would you like to find?">
+			</form>
+			<div class="mob-sidebar__menu">
+				<ul>
+					<li><a href="#">Popular</a></li>
+					<li><a href="#">Shirts</a></li>
+					<li><a href="#">Hoodies</a></li>
+					<li><a href="#">Accessories</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="mob-sidebar__contact">
+				<div class="shop__details">
+					<p class="shop__address">11000 Belgrade, Serbia, RS</p>
+					<a class="phone" href="tel:+381616428914">+381616428914</a>
+					<a class="email" href="mailto:hello@mfrshirts.com">hello@mfrshirts.com</a>
+				</div>
+				<div class="socials">
+					<a class="socials--instagram" target="_blank" href="https://www.instagram.com/mfrshirts/" aria-label="instagram">Instagram</a>
+					<a class="socials--facebook" target="_blank" href="https://www.facebook.com/mfrshirts" aria-label="facebook">Facebook</a>
+					<a class="socials--tiktok" target="_blank" href="https://www.tiktok.com/@mfrshirts" aria-label="tiktok">TikTok</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <main>
 	<h1 class="title">DTG&nbsp; motorcycle t-shirts made from 100% cotton.</h1>
+	<!--	<section class="slider__wrapper">-->
+	<!--		<div class="slider__list">-->
+	<!--			<div class="slider__item ">-->
+	<!--				<picture class="slider__image">-->
+	<!--					<source media="(min-width:1400px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-l-x1-webp.webp">-->
+	<!--					<source media="(min-width:1200px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-m-x1-webp.webp">-->
+	<!--					<source media="(min-width:1000px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-s-x1-webp.webp">-->
+	<!--					<source media="(min-width:800px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-xs-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-xs-x1-webp.webp">-->
+	<!--					<source media="(min-width:600px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-l-x1-webp.webp">-->
+	<!--					<source media="(min-width:400px)"-->
+	<!--					        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-m-x1-webp.webp">-->
+	<!--					<source-->
+	<!--							srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/340/conversions/media-libraryysrwz6-mobile-s-x1-webp.webp">-->
+	<!--					<img-->
+	<!--							src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/350/conversions/media-libraryRoe2F3-desktop-xl-x1-webp.webp"-->
+	<!--							alt="GRIP IT, RIP IT AND ENJOY IT_image">-->
+	<!--				</picture>-->
+	<!--				<div class="slider__content">-->
+	<!--					<p class="tau-slider__subtitle">100% Cotton shirt, made by bikers - for bikers</p>-->
+	<!--					<h2 class="tau-slider__title"> GRIP IT, RIP IT AND ENJOY IT</h2>-->
+	<!--					<a class="b-btn tau-slider__btn" href="#" aria-label="BUY NOW">-->
+	<!--						BUY NOW-->
+	<!--					</a>-->
+	<!--				</div>-->
+	<!--			</div>-->
+	<!--		</div>-->
+	<!--		<div class="slider__bullets ">-->
+	<!--			<div class="slider__bullet" data-id="0"></div>-->
+	<!--			<div class="slider__bullet" data-id="1"></div>-->
+	<!--			<div class="slider__bullet" data-id="2"></div>-->
+	<!--			<div class="slider__bullet" data-id="3"></div>-->
+	<!--		</div>-->
+	<!--	</section>-->
+	<section class="recommended-block">
+		<div class="wrapper">
+			<div class="section-title"><h3>Best selling products</h3>
+				<p class="section-title__desc">Choose the one that suits you - and enjoy your next ride!</p>
+			</div>
+			<div class="product-card__wrapper">
+				<div class="product-card">
+					<div class="badges">
+						<div class="badges__item badges__item--hot"><span>HOT</span></div>
+					</div>
+					<a href="#"
+					   aria-label="Shut up and ride, let the bike talk Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/557/conversions/unisex-basic-softstyle-t-shirt-black-front-62e934857e65a-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/560/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e934857e7f2-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt="">
+								</picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-text-wrapper">
+								<h4 class="product-card__name"> Shut up and ride, let the bike talk</h4>
+								<div class="product-card__text"> Also available in white</div>
+							</div>
+							<div class="product-card__prices">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<div class="badges">
+						<div class="badges__item badges__item--new"><span>NEW</span></div>
+					</div>
+					<a href="#"
+					   aria-label="Put your helmet and ride your dream Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/461/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9271ac201d-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/462/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9271ac226b-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="name-text-wrapper">
+								<h4 class="product-card__name"> Put your helmet and ride your dream</h4>
+								<div class="product-card__text"> Also available in white</div>
+							</div>
+							<div class="product-card__prices ">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<a
+							href="#"
+							aria-label="The brave don't live forever Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/851/conversions/unisex-basic-softstyle-t-shirt-black-front-62ed0ce7dcc7d-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/855/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62ed0ce7dd3f6-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> The brave don't live forever</h4>
+								<div class="product-card__text"> Also available in white</div>
+							</div>
+							<div class="product-card__prices ">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<div class="badges">
+						<div class="badges__item badges__item--hot"><span>HOT</span></div>
+					</div>
+					<a href="#"
+					   aria-label="Don't let your ego twist the throttle Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/516/conversions/unisex-basic-softstyle-t-shirt-black-front-62e92f39688ab-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/518/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e92f3968aa8-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> Don't let your ego twist the throttle</h4>
+								<div class="product-card__text"> Also available in white</div>
+							</div>
+							<div class="product-card__prices ">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<div class="badges">
+						<div class="badges__item badges__item--new"><span>NEW</span></div>
+					</div>
+					<a href="#"
+					   aria-label="Best view is from motorcycle helmet Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/528/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9310c6f3aa-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/532/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e931515c2ad-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> Best view is from motorcycle helmet</h4>
+								<div class="product-card__text"> Also available in white</div>
+							</div>
+							<div class="product-card__prices">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<div class="badges">
+						<div class="badges__item badges__item--top-selling"><span>TOP SELLING</span></div>
+					</div>
+					<a href="#"
+					   aria-label="Grip it and rip it, let your ears ring Also available in white € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/543/conversions/unisex-basic-softstyle-t-shirt-black-front-62e9334449d40-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/546/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e9334449f85-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> Grip it and rip it, let your ears ring</h4>
+								<div class="product-card__text"> Also available in white</div>
+								<div class="product-card__prices ">
+									<p class="price regular-price">€ 24.99</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<a
+							href="#"
+							aria-label="You don't stop when you get old Available only in black € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/570/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93764b3305-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/574/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93783b80eb-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> You don't stop when you get old</h4>
+								<div class="product-card__text"> Available only in black</div>
+							</div>
+							<div class="product-card__prices ">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="product-card">
+					<a
+							href="#"
+							aria-label="My Harley doesn't leak oil Available only in black € 24.99">
+						<figure class="product-card__overlay">
+							<picture>
+								<source media="(min-width:870px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-l-x1-webp.webp">
+								<source media="(min-width:660px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-m-x1-webp.webp">
+								<source media="(min-width:600px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-s-x1-webp.webp">
+								<source media="(min-width:500px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-xl-x1-webp.webp">
+								<source media="(min-width:444px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-l-x1-webp.webp">
+								<source media="(min-width:334px)"
+								        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-m-x1-webp.webp">
+								<source
+										srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-s-x1-webp.webp">
+								<img
+										src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/604/conversions/unisex-basic-softstyle-t-shirt-black-front-62e93b3adb0f6-default-xl-x1-webp.webp"
+										width="500" height="500" loading="lazy" alt=""></picture>
+						</figure>
+						<figure class="product-card__hover">
+							<div class="product-card__image-wrapper">
+								<picture>
+									<source media="(min-width:870px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-l-x1-webp.webp">
+									<source media="(min-width:660px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-m-x1-webp.webp">
+									<source media="(min-width:600px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-s-x1-webp.webp">
+									<source media="(min-width:500px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-xl-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-xl-x1-webp.webp">
+									<source media="(min-width:444px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-l-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-l-x1-webp.webp">
+									<source media="(min-width:334px)"
+									        srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-m-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-m-x1-webp.webp">
+									<source
+											srcset="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-s-x2-webp.webp 2x, https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-s-x1-webp.webp">
+									<img
+											src="https://tau.fra1.cdn.digitaloceanspaces.com/mfrshirts/606/conversions/unisex-basic-softstyle-t-shirt-black-zoomed-in-62e93b3adb1cf-default-xl-x1-webp.webp"
+											width="500" height="500" loading="lazy" alt=""></picture>
+							</div>
+						</figure>
+						<div class="product-card__description">
+							<div class="product-card__name-price-wrap">
+								<h4 class="product-card__name"> My Harley doesn't leak oil</h4>
+								<div class="product-card__text"> Available only in black</div>
+							</div>
+							<div class="product-card__prices ">
+								<p class="price regular-price">€ 24.99</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
 </main>
 <footer></footer>
-<script src="/js/script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
