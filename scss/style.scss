@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
-@import "fonts";
 @import "variables";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap');
 
 body {
 	font-family: Poppins, sans-serif;
@@ -58,7 +58,7 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding-block: 18px;
+	padding-block: 16px;
 	transition: background .5s;
 	z-index: 1000;
 	display: none;
@@ -74,12 +74,18 @@ a {
 	.wrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin-inline: auto;
 		padding-inline: 40px;
 		
 		@media #{$normal} {
 			padding-inline: 60px;
 		}
+	}
+	
+	.logo {
+		display: flex;
+		align-items: center;
 	}
 	
 	.nav {
@@ -96,7 +102,7 @@ a {
 		
 		&__link {
 			font-weight: $font-weight-semi-bold;
-			padding: 15px 25px;
+			padding: 12px 25px;
 			text-decoration: none;
 			color: $color-text-inverse;
 			text-transform: uppercase;
@@ -116,7 +122,6 @@ a {
 			border: 1px solid $color-border-inverse;
 			height: 38px;
 			transform: skewX(-20deg);
-			margin-top: 3px;
 		}
 		
 		&__item {
@@ -303,11 +308,141 @@ a {
 			padding-top: 85px;
 			position: fixed;
 			transform: translateX(100%);
-			transition: transform .3s .2s;
+			transition: transform .3s;
 			width: 80%;
 			z-index: 100;
 		}
 		
+		&__search {
+			margin: 0 18px;
+			position: relative;
+			
+			input {
+				background: transparent;
+				border: none;
+				border-bottom: 1px solid $color-neutral-1;
+				outline: none;
+				padding-bottom: 6px;
+				width: 100%;
+				line-height: 1.5;
+			}
+			
+			button {
+				background: transparent url("../images/design/search-dark.svg") no-repeat center/24px;
+				border: none;
+				outline: none;
+				position: absolute;
+				right: -5px;
+				top: -3px;
+				width: 20px;
+				height: 20px;
+				cursor: pointer;
+			}
+		}
+		
+		&__menu {
+			ul {
+				margin: 23px 0 100px;
+				padding: 0;
+				list-style: none;
+				
+				li {
+					align-items: center;
+					display: block;
+					justify-content: space-between;
+					padding: 6px 18px;
+					position: relative;
+					text-transform: uppercase;
+					width: calc(100% - 49px);
+					
+					a {
+						color: $color-neutral-2;
+						font-size: 1.0625rem;
+						font-weight: $font-weight-semi-bold;
+					}
+				}
+			}
+		}
+		
+		&__contact {
+			background-color: $color-neutral-6;
+			margin-top: auto;
+			padding: 31px 22px 21px;
+			
+			.shop {
+				&__details {
+					display: flex;
+					flex-direction: column;
+					gap: 18px;
+					margin-bottom: 18px;
+				}
+			}
+			
+			.shop__address,
+			.phone,
+			.email {
+				margin: 0;
+				display: flex;
+				gap: 9px;
+				align-items: center;
+				color: $color-text;
+				
+				&::before {
+					content: "";
+					display: inline-block;
+					width: 22px;
+					height: 22px;
+				}
+			}
+			
+			.shop__address {
+				&::before {
+					background: url("../images/design/pin.svg") no-repeat center / 22px;
+				}
+			}
+			
+			.phone {
+				&::before {
+					background: url("../images/design/phone.svg") no-repeat center / 22px;
+				}
+			}
+			
+			.email {
+				&::before {
+					background: url("../images/design/mail.svg") no-repeat center / 22px;
+				}
+			}
+			
+			.socials {
+				display: flex;
+				align-items: center;
+				gap: 11px;
+				
+				a {
+					height: 29px;
+					text-indent: -10000px;
+					background-size: 29px;
+					background-repeat: no-repeat;
+					background-position: center;
+				}
+				
+				&--instagram {
+					background-image: url("../images/design/instagram.svg");
+					width: 23px;
+				}
+				
+				&--facebook {
+					background-image: url("../images/design/facebook.svg");
+					width: 20px;
+				}
+				
+				&--tiktok {
+					background-image: url("../images/design/tiktok.svg");
+					width: 25px;
+				}
+			}
+		}
+
 		&.open {
 			.mob-sidebar {
 				&__overlay {
@@ -317,136 +452,6 @@ a {
 				
 				&__nav {
 					transform: translateX(0);
-				}
-				
-				&__search {
-					margin: 0 18px;
-					position: relative;
-					
-					input {
-						background: transparent;
-						border: none;
-						border-bottom: 1px solid $color-neutral-1;
-						outline: none;
-						padding-bottom: 6px;
-						width: 100%;
-						line-height: 1.5;
-					}
-					
-					button {
-						background: transparent url("../images/design/search-dark.svg") no-repeat center/24px;
-						border: none;
-						outline: none;
-						position: absolute;
-						right: -5px;
-						top: -3px;
-						width: 20px;
-						height: 20px;
-						cursor: pointer;
-					}
-				}
-				
-				&__menu {
-					ul {
-						margin: 23px 0 100px;
-						padding: 0;
-						list-style: none;
-						
-						li {
-							align-items: center;
-							display: block;
-							justify-content: space-between;
-							padding: 10px 18px;
-							position: relative;
-							text-transform: uppercase;
-							width: calc(100% - 49px);
-							
-							a {
-								color: $color-neutral-2;
-								font-size: 1.0625rem;
-								font-weight: $font-weight-semi-bold;
-							}
-						}
-					}
-				}
-				
-				&__contact {
-					background-color: $color-neutral-6;
-					margin-top: auto;
-					padding: 33px 22px 22px;
-					
-					.shop {
-						&__details {
-							display: flex;
-							flex-direction: column;
-							gap: 18px;
-							margin-bottom: 18px;
-						}
-					}
-					
-					.shop__address,
-					.phone,
-					.email {
-						margin: 0;
-						display: flex;
-						gap: 9px;
-						align-items: center;
-						color: $color-text;
-						
-						&::before {
-							content: "";
-							display: inline-block;
-							width: 22px;
-							height: 22px;
-						}
-					}
-					
-					.shop__address {
-						&::before {
-							background: url("../images/design/pin.svg") no-repeat center / 22px;
-						}
-					}
-					
-					.phone {
-						&::before {
-							background: url("../images/design/phone.svg") no-repeat center / 22px;
-						}
-					}
-					
-					.email {
-						&::before {
-							background: url("../images/design/mail.svg") no-repeat center / 22px;
-						}
-					}
-					
-					.socials {
-						display: flex;
-						align-items: center;
-						gap: 11px;
-						
-						a {
-							height: 29px;
-							text-indent: -10000px;
-							background-size: 29px;
-							background-repeat: no-repeat;
-							background-position: center;
-						}
-						
-						&--instagram {
-							background-image: url("../images/design/instagram.svg");
-							width: 23px;
-						}
-						
-						&--facebook {
-							background-image: url("../images/design/facebook.svg");
-							width: 20px;
-						}
-						
-						&--tiktok {
-							background-image: url("../images/design/tiktok.svg");
-							width: 25px;
-						}
-					}
 				}
 			}
 		}
@@ -502,7 +507,7 @@ h1.title {
 			display: flex;
 			flex-wrap: wrap;
 			gap: 35px;
-			padding: 15px;
+			padding: 15px 0;
 		}
 		
 		position: relative;
@@ -533,6 +538,10 @@ h1.title {
 				max-width: 100%;
 				transition: transform .6s linear .1s;
 				width: 100%;
+			}
+			
+			&.product-card__overlay {
+				padding-bottom: 3px;
 			}
 		}
 		
@@ -615,6 +624,7 @@ h1.title {
 			.price {
 				margin: 0;
 				white-space: nowrap;
+				text-align: left;
 			}
 		}
 	}
@@ -637,7 +647,7 @@ h1.title {
 		margin: 0;
 		
 		@media #{$tablet} {
-			font-size: 23px;
+			font-size: 27px;
 			line-height: 32px;
 		}
 		
@@ -645,9 +655,14 @@ h1.title {
 		&::after {
 			content: "";
 			display: inline-block;
-			height: 10px;
-			width: 57px;
+			height: 7px;
+			width: 32px;
 			background-color: $color-accent;
+			
+			@media #{$tablet} {
+				width: 57px;
+				height: 10px;
+			}
 		}
 		
 		&::before {

@@ -1,31 +1,4 @@
-@font-face {
-  font-display: swap;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 400;
-  src: url(/fonts/poppins-v19-latin-ext-regular.eot);
-  src: local(""), url(/fonts/poppins-v19-latin-ext-regular.eot) format("embedded-opentype"), url(/fonts/poppins-v19-latin-ext-regular.woff2) format("woff2"), url(/fonts/poppins-v19-latin-ext-regular.woff) format("woff"), url(/fonts/poppins-v19-latin-ext-regular.ttf) format("truetype"), url(/fonts/poppins-v19-latin-ext-regular.svg) format("svg"); }
-@font-face {
-  font-display: swap;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 700;
-  src: url(/fonts/poppins-v19-latin-ext-700.eot);
-  src: local(""), url(/fonts/poppins-v19-latin-ext-700.eot) format("embedded-opentype"), url(/fonts/poppins-v19-latin-ext-700.woff2) format("woff2"), url(/fonts/poppins-v19-latin-ext-700.woff) format("woff"), url(/fonts/poppins-v19-latin-ext-700.ttf) format("truetype"), url(/fonts/poppins-v19-latin-ext-700.svg) format("svg"); }
-@font-face {
-  font-display: swap;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 800;
-  src: url(/fonts/poppins-v19-latin-ext-800.eot);
-  src: local(""), url(/fonts/poppins-v19-latin-ext-800.eot) format("embedded-opentype"), url(/fonts/poppins-v19-latin-ext-800.woff2) format("woff2"), url(/fonts/poppins-v19-latin-ext-800.woff) format("woff"), url(/fonts/poppins-v19-latin-ext-800.ttf) format("truetype"), url(/fonts/poppins-v19-latin-ext-800.svg) format("svg"); }
-@font-face {
-  font-display: swap;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 900;
-  src: url(/fonts/poppins-v19-latin-ext-900.eot);
-  src: local(""), url(/fonts/poppins-v19-latin-ext-900.eot) format("embedded-opentype"), url(/fonts/poppins-v19-latin-ext-900.woff2) format("woff2"), url(/fonts/poppins-v19-latin-ext-900.woff) format("woff"), url(/fonts/poppins-v19-latin-ext-900.ttf) format("truetype"), url(/fonts/poppins-v19-latin-ext-900.svg); }
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,700,800,900&display=swap");
 body {
   font-family: Poppins, sans-serif;
   margin: unset; }
@@ -72,7 +45,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  padding-block: 18px;
+  padding-block: 16px;
   transition: background .5s;
   z-index: 1000;
   display: none; }
@@ -84,11 +57,15 @@ a {
   .header .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-inline: auto;
     padding-inline: 40px; }
     @media (min-width: 992px) {
       .header .wrapper {
         padding-inline: 60px; } }
+  .header .logo {
+    display: flex;
+    align-items: center; }
   .header .nav__list {
     list-style: none;
     display: flex;
@@ -98,7 +75,7 @@ a {
     display: flex; }
   .header .nav__link {
     font-weight: 700;
-    padding: 15px 25px;
+    padding: 12px 25px;
     text-decoration: none;
     color: white;
     text-transform: uppercase;
@@ -111,8 +88,7 @@ a {
     align-items: center;
     border: 1px solid white;
     height: 38px;
-    transform: skewX(-20deg);
-    margin-top: 3px; }
+    transform: skewX(-20deg); }
   .header .actions__item {
     text-indent: -10000px;
     width: 38px;
@@ -230,18 +206,13 @@ a {
     padding-top: 85px;
     position: fixed;
     transform: translateX(100%);
-    transition: transform .3s .2s;
+    transition: transform .3s;
     width: 80%;
     z-index: 100; }
-  .header-mobile .mob-sidebar.open .mob-sidebar__overlay {
-    opacity: .6;
-    visibility: visible; }
-  .header-mobile .mob-sidebar.open .mob-sidebar__nav {
-    transform: translateX(0); }
-  .header-mobile .mob-sidebar.open .mob-sidebar__search {
+  .header-mobile .mob-sidebar__search {
     margin: 0 18px;
     position: relative; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__search input {
+    .header-mobile .mob-sidebar__search input {
       background: transparent;
       border: none;
       border-bottom: 1px solid #202020;
@@ -249,7 +220,7 @@ a {
       padding-bottom: 6px;
       width: 100%;
       line-height: 1.5; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__search button {
+    .header-mobile .mob-sidebar__search button {
       background: transparent url("../images/design/search-dark.svg") no-repeat center/24px;
       border: none;
       outline: none;
@@ -259,71 +230,76 @@ a {
       width: 20px;
       height: 20px;
       cursor: pointer; }
-  .header-mobile .mob-sidebar.open .mob-sidebar__menu ul {
+  .header-mobile .mob-sidebar__menu ul {
     margin: 23px 0 100px;
     padding: 0;
     list-style: none; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__menu ul li {
+    .header-mobile .mob-sidebar__menu ul li {
       align-items: center;
       display: block;
       justify-content: space-between;
-      padding: 10px 18px;
+      padding: 6px 18px;
       position: relative;
       text-transform: uppercase;
       width: calc(100% - 49px); }
-      .header-mobile .mob-sidebar.open .mob-sidebar__menu ul li a {
+      .header-mobile .mob-sidebar__menu ul li a {
         color: #42484d;
         font-size: 1.0625rem;
         font-weight: 700; }
-  .header-mobile .mob-sidebar.open .mob-sidebar__contact {
+  .header-mobile .mob-sidebar__contact {
     background-color: #ececec;
     margin-top: auto;
-    padding: 33px 22px 22px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .shop__details {
+    padding: 31px 22px 21px; }
+    .header-mobile .mob-sidebar__contact .shop__details {
       display: flex;
       flex-direction: column;
       gap: 18px;
       margin-bottom: 18px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .shop__address,
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .phone,
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .email {
+    .header-mobile .mob-sidebar__contact .shop__address,
+    .header-mobile .mob-sidebar__contact .phone,
+    .header-mobile .mob-sidebar__contact .email {
       margin: 0;
       display: flex;
       gap: 9px;
       align-items: center;
       color: #202020; }
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .shop__address::before,
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .phone::before,
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .email::before {
+      .header-mobile .mob-sidebar__contact .shop__address::before,
+      .header-mobile .mob-sidebar__contact .phone::before,
+      .header-mobile .mob-sidebar__contact .email::before {
         content: "";
         display: inline-block;
         width: 22px;
         height: 22px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .shop__address::before {
+    .header-mobile .mob-sidebar__contact .shop__address::before {
       background: url("../images/design/pin.svg") no-repeat center/22px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .phone::before {
+    .header-mobile .mob-sidebar__contact .phone::before {
       background: url("../images/design/phone.svg") no-repeat center/22px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .email::before {
+    .header-mobile .mob-sidebar__contact .email::before {
       background: url("../images/design/mail.svg") no-repeat center/22px; }
-    .header-mobile .mob-sidebar.open .mob-sidebar__contact .socials {
+    .header-mobile .mob-sidebar__contact .socials {
       display: flex;
       align-items: center;
       gap: 11px; }
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .socials a {
+      .header-mobile .mob-sidebar__contact .socials a {
         height: 29px;
         text-indent: -10000px;
         background-size: 29px;
         background-repeat: no-repeat;
         background-position: center; }
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .socials--instagram {
+      .header-mobile .mob-sidebar__contact .socials--instagram {
         background-image: url("../images/design/instagram.svg");
         width: 23px; }
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .socials--facebook {
+      .header-mobile .mob-sidebar__contact .socials--facebook {
         background-image: url("../images/design/facebook.svg");
         width: 20px; }
-      .header-mobile .mob-sidebar.open .mob-sidebar__contact .socials--tiktok {
+      .header-mobile .mob-sidebar__contact .socials--tiktok {
         background-image: url("../images/design/tiktok.svg");
         width: 25px; }
+  .header-mobile .mob-sidebar.open .mob-sidebar__overlay {
+    opacity: .6;
+    visibility: visible; }
+  .header-mobile .mob-sidebar.open .mob-sidebar__nav {
+    transform: translateX(0); }
   @media (min-width: 1200px) {
     .header-mobile {
       display: none; } }
@@ -357,7 +333,7 @@ h1.title {
       display: flex;
       flex-wrap: wrap;
       gap: 35px;
-      padding: 15px; }
+      padding: 15px 0; }
     @media (min-width: 600px) {
       .recommended-block .product-card {
         flex: 0 0 calc(50% - 17.5px);
@@ -378,6 +354,8 @@ h1.title {
         max-width: 100%;
         transition: transform .6s linear .1s;
         width: 100%; }
+      .recommended-block .product-card figure.product-card__overlay {
+        padding-bottom: 3px; }
     .recommended-block .product-card__overlay {
       position: relative; }
     .recommended-block .product-card__hover {
@@ -429,7 +407,8 @@ h1.title {
       font-weight: 700; }
       .recommended-block .product-card__prices .price {
         margin: 0;
-        white-space: nowrap; }
+        white-space: nowrap;
+        text-align: left; }
 
 .section-title {
   margin: 0 15px 40px;
@@ -447,14 +426,18 @@ h1.title {
     margin: 0; }
     @media (min-width: 770px) {
       .section-title h3 {
-        font-size: 23px;
+        font-size: 27px;
         line-height: 32px; } }
     .section-title h3::before, .section-title h3::after {
       content: "";
       display: inline-block;
-      height: 10px;
-      width: 57px;
+      height: 7px;
+      width: 32px;
       background-color: #dc232b; }
+      @media (min-width: 770px) {
+        .section-title h3::before, .section-title h3::after {
+          width: 57px;
+          height: 10px; } }
     .section-title h3::before {
       margin-right: 16px; }
     .section-title h3::after {

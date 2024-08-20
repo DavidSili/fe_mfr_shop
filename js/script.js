@@ -19,3 +19,13 @@ function closeSidebar() {
 	document.querySelector('.mob-sidebar').classList
 		.remove("open")
 }
+
+document.addEventListener("scroll", () => {
+	if (window.scrollY > 120) {
+		document.querySelector("header.header").classList
+			.remove("header-over-slider");
+	} else {
+		document.querySelector("header.header").classList
+			.add("header-over-slider");
+	}
+});
