@@ -627,10 +627,6 @@ h1.title {
 		@media #{$tablet} {
 			left: 40px;
 		}
-		
-		@media #{$laptop} {
-			bottom: 60px;
-		}
 	}
 	
 	&__bullet {

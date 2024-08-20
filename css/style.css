@@ -426,9 +426,6 @@ h1.title {
   @media (min-width: 770px) {
     .slider__bullets {
       left: 40px; } }
-  @media (min-width: 1200px) {
-    .slider__bullets {
-      bottom: 60px; } }
 .slider__bullet {
   width: 15px;
   height: 15px;
