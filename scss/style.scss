@@ -485,11 +485,19 @@ h1.title {
 	
 	&__list {
 		height: 100%;
+		display: flex;
+		transform: translateX(0);
+		
+		&.moving {
+			transition: transform 0.7s ease-in-out;
+		}
 	}
 	
 	&__item {
 		position: relative;
 		height: 100%;
+		width: 100dvw;
+		overflow: hidden;
 	}
 	
 	&__image {
@@ -606,6 +614,36 @@ h1.title {
 			&::after {
 				left: -100%;
 			}
+		}
+	}
+	
+	&__bullets {
+		position: absolute;
+		display: flex;
+		gap: 10px;
+		left: 20px;
+		bottom: 30px;
+		
+		@media #{$tablet} {
+			left: 40px;
+		}
+		
+		@media #{$laptop} {
+			bottom: 60px;
+		}
+	}
+	
+	&__bullet {
+		width: 15px;
+		height: 15px;
+		z-index: 10;
+		opacity: .4;
+		background-color: white;
+		cursor: pointer;
+		
+		&.active {
+			opacity: 1;
+			transform: scale(1.2);
 		}
 	}
 }
